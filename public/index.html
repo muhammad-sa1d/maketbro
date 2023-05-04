@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/input.css" /> -->
+    <link rel="stylesheet" href="/src/styles.css" />
+
+    <title>Maker</title>
+  </head>
+  <body class="font-WorkSans">
+    <!-- into selector -->
+    <header
+      class="bg-hero md:overflow-hidden bg-bg-hero bg-backgroundSize bg-no-repeat md:bg-right w-full from-indigo-200 to-red-300"
+    >
+      <!-- navbar -->
+      <nav class="relative top-0">
+        <!-- Desktop menu -->
+        <div
+          class="container mx-auto px-4 py-5 flex items-center justify-between"
+        >
+          <!-- logo -->
+          <a href="#" class="flex items-center gap-x-1">
+            <svg
+              class="w-8 rounded-full cursor-pointer"
+              width="28"
+              height="31"
+              viewBox="0 0 28 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.7438 17.9904C26.886 18.8794 28.7857 22.2704 26.7581 24.8302C25.8184 26.0166 24.6977 27.0628 23.4267 27.9259C20.5076 29.9083 16.983 30.7981 13.4726 30.4388C9.9623 30.0796 6.69099 28.4943 4.23389 25.9617C1.77678 23.4291 0.291187 20.1113 0.0383106 16.5917C-0.214566 13.0721 0.781464 9.57606 2.85127 6.7182C4.92109 3.86035 7.93216 1.82368 11.3551 0.96629C14.778 0.108904 18.3936 0.485693 21.5662 2.03041C22.9475 2.70295 24.2063 3.57813 25.3059 4.61803C27.6786 6.86172 26.2832 10.4895 23.3004 11.8185L19.925 13.3224C18.8063 13.8208 17.4905 13.1987 16.3894 12.6626C15.718 12.3357 14.9528 12.256 14.2284 12.4374C13.504 12.6189 12.8668 13.0499 12.4287 13.6547C11.9907 14.2595 11.7799 14.9994 11.8334 15.7443C11.8869 16.4891 12.2013 17.1913 12.7213 17.7273C13.2413 18.2632 13.9337 18.5987 14.6766 18.6748C15.4195 18.7508 16.1654 18.5625 16.7832 18.1429C17.7963 17.4549 19.0097 16.6512 20.1881 16.9845L23.7438 17.9904Z"
+                fill="#35AFBF"
+              />
+            </svg>
+            <span class="cursor-pointer text-2xl font-bold text-black"
+              >Maker</span
+            >
+          </a>
+          <div
+            class="hidden lg:flex space-x-10 text-gray-600 font-normal text-base"
+          >
+            <a
+              href="#"
+              class="text-gray-400 duration-300 pb-2 border-b border-cyan-700"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 hover:border-b border-cyan-700"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 hover:border-b border-cyan-700"
+              >About</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 hover:border-b border-cyan-700"
+              >The Team</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 hover:border-b border-cyan-700"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 hover:border-b border-cyan-700"
+              >Contact</a
+            >
+          </div>
+
+          <div class="flex flex-row-reverse gap-x-6">
+            <!-- Menu btn  -->
+            <button
+              type="button"
+              class="menuBtn space-y-1 cursor-pointer lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                />
+              </svg>
+            </button>
+
+            <!-- button -->
+            <button
+              class="hidden md:flex px-8 duration-300 py-3 hover:scale-105 bg-backgroundColor text-lg rounded-2xl text-white"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div
+          class="menu lg:hidden absolute left-0 top-0 -translate-x-full rounded-b-3xl w-full text-white bg-slate-800 p-5 z-10"
+        >
+          <div
+            class="px-4 lg:px-0 flex container mx-auto justify-between md:px-5 items-center"
+          >
+            <!-- logo -->
+            <a href="#" class="flex items-center gap-2">
+              <svg
+                class="w-8 rounded-full cursor-pointer"
+                width="28"
+                height="31"
+                viewBox="0 0 28 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.7438 17.9904C26.886 18.8794 28.7857 22.2704 26.7581 24.8302C25.8184 26.0166 24.6977 27.0628 23.4267 27.9259C20.5076 29.9083 16.983 30.7981 13.4726 30.4388C9.9623 30.0796 6.69099 28.4943 4.23389 25.9617C1.77678 23.4291 0.291187 20.1113 0.0383106 16.5917C-0.214566 13.0721 0.781464 9.57606 2.85127 6.7182C4.92109 3.86035 7.93216 1.82368 11.3551 0.96629C14.778 0.108904 18.3936 0.485693 21.5662 2.03041C22.9475 2.70295 24.2063 3.57813 25.3059 4.61803C27.6786 6.86172 26.2832 10.4895 23.3004 11.8185L19.925 13.3224C18.8063 13.8208 17.4905 13.1987 16.3894 12.6626C15.718 12.3357 14.9528 12.256 14.2284 12.4374C13.504 12.6189 12.8668 13.0499 12.4287 13.6547C11.9907 14.2595 11.7799 14.9994 11.8334 15.7443C11.8869 16.4891 12.2013 17.1913 12.7213 17.7273C13.2413 18.2632 13.9337 18.5987 14.6766 18.6748C15.4195 18.7508 16.1654 18.5625 16.7832 18.1429C17.7963 17.4549 19.0097 16.6512 20.1881 16.9845L23.7438 17.9904Z"
+                  fill="#35AFBF"
+                />
+              </svg>
+
+              <span class="cursor-pointer text-2xl font-bold text-white"
+                >Maker</span
+              >
+            </a>
+            <!-- Xbtn -->
+            <button class="xBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex mt-10 flex-col justify-center items-center space-y-4"
+          >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 border-b border-cyan-700"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 hover:border-b border-cyan-700"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 hover:border-b border-cyan-700"
+              >About</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 hover:border-b border-cyan-700"
+              >The Team</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 hover:border-b border-cyan-700"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 hover:border-b border-cyan-700"
+              >Contact</a
+            >
+            <button
+              class="w-full duration-300 sm:w-auto sm:px-20 py-3 hover:scale-105 bg-backgroundColor text-lg rounded-2xl text-white"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- into contend -->
+
+      <!-- hero-section -->
+      <section>
+        <div
+          class="container py-5 lg:py-20 mx-auto px-4 flex justify-between flex-col gap-y-8 lg:flex-row"
+        >
+          <div class="flex flex-col gap-y-5 justify-center">
+            <h1
+              class="text-2xl md:text-4xl lg:text-5xl font-bold w-full lg:max-w-[553px]"
+            >
+              <span class="text-textColor">Make</span> a Creative solutions for
+              your Creative <span class="text-textColor">ideas.</span>
+            </h1>
+            <p
+              class="text-base md:text-xl max-w-[523px] text-textarey font-medium"
+            >
+              We are here to give you effective ideas. We help the brands to
+              become what they want.
+            </p>
+            <div>
+              <button
+                class="w-full md:w-auto px-2 md:px-8 duration-300 py-3 hover:scale-105 bg-backgroundColor text-base md:text-lg rounded-xl text-white"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="">
+            <img
+              src="./images/Hero area Image.png"
+              alt="logo"
+              class="relative right-0 lg:-right-24 w-full py-4 lg:py-0 md:px-20 lg:p-0"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- We provide great services -->
+    <div class="container px-4 mx-auto pt-10">
+      <h3
+        class="text-center font-semibold text-2xl md:text-3xl lg:text-4xl font-sans"
+      >
+        We provide great services
+      </h3>
+      <p class="text-base text-textarey text-center max-w-[580px] mx-auto mt-6">
+        We help people to think independent. Be the boss of your brand and be
+        the storyteller. An appropriate approach.
+      </p>
+    </div>
+    <div
+      class="flex container mx-auto px-4 py-10 md:py-20 items-center justify-center gap-x-10 xl:gap-x-32 gap-y-8 flex-col lg:flex-row"
+    >
+      <div
+        class="flex gap-6 md:gap-10 flex-col sm:flex-row w-full lg:w-1/2 justify-center lg:justify-between"
+      >
+        <div
+          style="background-size: cover"
+          class="px-4 py-8 duration-500 bg-Image bg-no-repeat rounded-md flex flex-col justify-center items-center gap-y-3"
+        >
+          <div>
+            <img
+              src="./svg/iconsvg.svg"
+              alt="logo_svg"
+              class="w-14 md:w-20 h-14 md:h-20"
+            />
+          </div>
+          <span class="font-semibold text-xl">Web Design</span>
+          <p class="text-textarey max-w-[187px] text-center">
+            Powerful creations for the practice safe design.
+          </p>
+        </div>
+
+        <div
+          style="background-size: cover"
+          class="px-4 py-8 duration-500 hover:bg-Image bg-no-repeat rounded-md flex flex-col justify-center items-center gap-y-3"
+        >
+          <div>
+            <img
+              src="./svg/iconsvg.svg"
+              alt="logo_svg"
+              class="w-14 md:w-20 h-14 md:h-20"
+            />
+          </div>
+          <span class="font-semibold text-xl">Web Design</span>
+          <p class="text-textarey max-w-[187px] text-center">
+            Powerful creations for the practice safe design.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex gap-6 md:gap-10 flex-col sm:flex-row w-full lg:w-1/2 justify-center lg:justify-between"
+      >
+        <div
+          style="background-size: cover"
+          class="px-4 py-8 duration-500 hover:bg-Image bg-no-repeat rounded-md flex flex-col justify-center items-center gap-y-3"
+        >
+          <div>
+            <img
+              src="./svg/iconsvg.svg"
+              alt="logo_svg"
+              class="w-14 md:w-20 h-14 md:h-20"
+            />
+          </div>
+          <span class="font-semibold text-xl">Web Design</span>
+          <p class="text-textarey max-w-[187px] text-center">
+            Powerful creations for the practice safe design.
+          </p>
+        </div>
+
+        <div
+          style="background-size: cover"
+          class="px-4 py-8 duration-500 hover:bg-Image bg-no-repeat rounded-md flex flex-col justify-center items-center gap-y-3"
+        >
+          <div>
+            <img
+              src="./svg/iconsvg.svg"
+              alt="logo_svg"
+              class="w-14 md:w-20 h-14 md:h-20"
+            />
+          </div>
+          <span class="font-semibold text-xl">Web Design</span>
+          <p class="text-textarey max-w-[187px] text-center">
+            Powerful creations for the practice safe design.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Johnatan Doe  -->
+    <div
+      class="container mx-auto py-10 lg:py-32 px-4 flex flex-col lg:flex-row items-center lg:justify-between gap-10"
+    >
+      <div class="flex flex-col justify-center">
+        <h3 class="font-sans font-bold text-2xl md:text-3xl lg:text-4xl">
+          Johnatan Doe
+        </h3>
+        <span class="flex items-center gap-2 text-textarey text-base mt-3"
+          >Marketing Specialist
+          <svg
+            class="mt-3"
+            width="61"
+            height="1"
+            viewBox="0 0 61 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line y1="0.5" x2="61" y2="0.5" stroke="#707273" />
+          </svg>
+        </span>
+        <p class="max-w-[405px] text-textarey text-base mt-5">
+          To make your web design company famous in the little we are here to
+          provide you as many as catchy and useful web design company will
+          surely help your company.
+        </p>
+        <div>
+          <button
+            class="mt-8 px-8 py-4 border rounded-lg text-base font-medium text-blue-300 w-full md:w-auto duration-300 hover:scale-105"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/Image.png"
+          alt="logo"
+          class="md:py-10 lg:py-0 md:pl-10 lg:pl-0"
+        />
+      </div>
+    </div>
+
+    <!-- Watch how we work -->
+    <div class="bg-vidio w-full py-28 md:py-36 bg-no-repeat bg-backgroundSize2">
+      <div
+        class="container px-4 mx-auto flex flex-col justify-center items-center gap-6"
+      >
+        <h2
+          class="text-center text-white text-2xl md:text-3xl lg:text-4xl font-bold"
+        >
+          Watch how we work
+        </h2>
+        <p class="text-center text-white text-base max-w-[700px] font-WorkSans">
+          Capture more customers with a great brand recall. Whether you need a
+          tising or as a tagline for your business, our slogan generator will
+          help you come up with us.
+        </p>
+        <div>
+          <img
+            src="./images/Play button.png"
+            alt="logo"
+            class="mt-3 w-16 md:w-24 cursor-pointer hover:scale-110 duration-500"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Best features in the world -->
+    <div class="container mx-auto px-4 py-10 lg:py-32 font-WorkSans">
+      <div>
+        <h3 class="font-bold text-2xl md:text-3xl lg:text-4xl text-center">
+          Best features in the world
+        </h3>
+        <p
+          class="text-base text-textarey text-justify md:text-center max-w-[785px] mx-auto mt-5"
+        >
+          Capture more customers wd recall. Whether you need a tising or as a
+          tagline for you. Capture more customers wd recall. Whether you need a
+          tising or as a tagline for you.
+        </p>
+      </div>
+      <div
+        class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center mx-auto md:gap-16"
+      >
+        <div
+          class="font-WorkSans flex flex-col items-center max-w-[320px] text-center gap-y-4 md:gap-y-7"
+        >
+          <div>
+            <img
+              src="./images/icons.pngg.png"
+              alt="logo"
+              class="w-14 md:w-20"
+            />
+          </div>
+
+          <div>
+            <span class="font-semibold text-lg md:text-xl"
+              >Sleek and smooth animation</span
+            >
+            <p class="mt-2 md:mt-4 text-base text-textarey">
+              Powerful creations for the practice safe design creations for the
+              prac.
+            </p>
+          </div>
+          <svg
+            width="260"
+            height="2"
+            viewBox="0 0 260 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="260"
+              height="2"
+              rx="1"
+              fill="url(#paint0_linear_14_114)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_114"
+                x1="3.12947e-06"
+                y1="1.00028"
+                x2="260"
+                y2="0.000459361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#35AFBF" stop-opacity="0" />
+                <stop
+                  offset="0.496508"
+                  stop-color="#35AFBF"
+                  stop-opacity="0.83"
+                />
+                <stop offset="1" stop-color="#35AFBF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="font-WorkSans flex flex-col items-center max-w-[320px] text-center gap-y-4 md:gap-y-7"
+        >
+          <div>
+            <img
+              src="./images/icons.pngg.png"
+              alt="logo"
+              class="w-14 md:w-20"
+            />
+          </div>
+
+          <div>
+            <span class="font-semibold text-lg md:text-xl"
+              >Sleek and smooth animation</span
+            >
+            <p class="mt-2 md:mt-4 text-base text-textarey">
+              Powerful creations for the practice safe design creations for the
+              prac.
+            </p>
+          </div>
+          <svg
+            width="260"
+            height="2"
+            viewBox="0 0 260 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="260"
+              height="2"
+              rx="1"
+              fill="url(#paint0_linear_14_114)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_114"
+                x1="3.12947e-06"
+                y1="1.00028"
+                x2="260"
+                y2="0.000459361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#35AFBF" stop-opacity="0" />
+                <stop
+                  offset="0.496508"
+                  stop-color="#35AFBF"
+                  stop-opacity="0.83"
+                />
+                <stop offset="1" stop-color="#35AFBF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="font-WorkSans flex flex-col items-center max-w-[320px] text-center gap-y-4 md:gap-y-7"
+        >
+          <div>
+            <img
+              src="./images/icons.pngg.png"
+              alt="logo"
+              class="w-14 md:w-20"
+            />
+          </div>
+
+          <div>
+            <span class="font-semibold text-lg md:text-xl"
+              >Sleek and smooth animation</span
+            >
+            <p class="mt-2 md:mt-4 text-base text-textarey">
+              Powerful creations for the practice safe design creations for the
+              prac.
+            </p>
+          </div>
+          <svg
+            width="260"
+            height="2"
+            viewBox="0 0 260 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="260"
+              height="2"
+              rx="1"
+              fill="url(#paint0_linear_14_114)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_114"
+                x1="3.12947e-06"
+                y1="1.00028"
+                x2="260"
+                y2="0.000459361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#35AFBF" stop-opacity="0" />
+                <stop
+                  offset="0.496508"
+                  stop-color="#35AFBF"
+                  stop-opacity="0.83"
+                />
+                <stop offset="1" stop-color="#35AFBF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="font-WorkSans flex flex-col items-center max-w-[320px] text-center gap-y-4 md:gap-y-7"
+        >
+          <div>
+            <img
+              src="./images/icons.pngg.png"
+              alt="logo"
+              class="w-14 md:w-20"
+            />
+          </div>
+
+          <div>
+            <span class="font-semibold text-lg md:text-xl"
+              >Sleek and smooth animation</span
+            >
+            <p class="mt-2 md:mt-4 text-base text-textarey">
+              Powerful creations for the practice safe design creations for the
+              prac.
+            </p>
+          </div>
+          <svg
+            width="260"
+            height="2"
+            viewBox="0 0 260 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="260"
+              height="2"
+              rx="1"
+              fill="url(#paint0_linear_14_114)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_114"
+                x1="3.12947e-06"
+                y1="1.00028"
+                x2="260"
+                y2="0.000459361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#35AFBF" stop-opacity="0" />
+                <stop
+                  offset="0.496508"
+                  stop-color="#35AFBF"
+                  stop-opacity="0.83"
+                />
+                <stop offset="1" stop-color="#35AFBF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="font-WorkSans flex flex-col items-center max-w-[320px] text-center gap-y-4 md:gap-y-7"
+        >
+          <div>
+            <img
+              src="./images/icons.pngg.png"
+              alt="logo"
+              class="w-14 md:w-20"
+            />
+          </div>
+
+          <div>
+            <span class="font-semibold text-lg md:text-xl"
+              >Sleek and smooth animation</span
+            >
+            <p class="mt-2 md:mt-4 text-base text-textarey">
+              Powerful creations for the practice safe design creations for the
+              prac.
+            </p>
+          </div>
+          <svg
+            width="260"
+            height="2"
+            viewBox="0 0 260 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="260"
+              height="2"
+              rx="1"
+              fill="url(#paint0_linear_14_114)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_114"
+                x1="3.12947e-06"
+                y1="1.00028"
+                x2="260"
+                y2="0.000459361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#35AFBF" stop-opacity="0" />
+                <stop
+                  offset="0.496508"
+                  stop-color="#35AFBF"
+                  stop-opacity="0.83"
+                />
+                <stop offset="1" stop-color="#35AFBF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="font-WorkSans flex flex-col items-center max-w-[320px] text-center gap-y-4 md:gap-y-7"
+        >
+          <div>
+            <img
+              src="./images/icons.pngg.png"
+              alt="logo"
+              class="w-14 md:w-20"
+            />
+          </div>
+
+          <div>
+            <span class="font-semibold text-lg md:text-xl"
+              >Sleek and smooth animation</span
+            >
+            <p class="mt-2 md:mt-4 text-base text-textarey">
+              Powerful creations for the practice safe design creations for the
+              prac.
+            </p>
+          </div>
+          <svg
+            width="260"
+            height="2"
+            viewBox="0 0 260 2"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="260"
+              height="2"
+              rx="1"
+              fill="url(#paint0_linear_14_114)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_14_114"
+                x1="3.12947e-06"
+                y1="1.00028"
+                x2="260"
+                y2="0.000459361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#35AFBF" stop-opacity="0" />
+                <stop
+                  offset="0.496508"
+                  stop-color="#35AFBF"
+                  stop-opacity="0.83"
+                />
+                <stop offset="1" stop-color="#35AFBF" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logoipsum -->
+    <div
+      class="bg-Testimon w-full py-14 md:py-32 bg-no-repeat bg-backgroundSize2"
+    >
+      <div
+        class="container mx-auto px-4 flex flex-col items-center gap-6 md:gap-10"
+      >
+        <div>
+          <img src="./images/logatif.png" alt="logo" class="w-32 md:w-40" />
+        </div>
+        <p
+          class="text-justify md:text-center max-w-5xl text-lg sm:text-xl md:text-2xl lg:text-3xl text-textarey"
+        >
+          “Always a pleasure to work with The Agency Creative. Such professional
+          and happy people and you know you’ll receive a quick innovative and no
+          fuss service.”
+        </p>
+        <div class="flex gap-4 items-center">
+          <div>
+            <img
+              src="./images/Image-portfil.png"
+              alt="logo"
+              class="w-11 md:w-16"
+            />
+          </div>
+          <div>
+            <span class="text-lg md:text-xl font-medium">Johnatan Doe </span>
+            <p class="text-textarey">Web Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get Started -->
+    <div
+      class="container mx-auto px-4 flex flex-col items-center py-12 md:py-20 lg:py-32 gap-8"
+    >
+      <h3
+        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center max-w-[854px] font-bold"
+      >
+        People have tried to predict the future since the dawn of time.
+      </h3>
+      <div class="w-full md:w-auto">
+        <button
+          class="w-full md:w-auto md:px-9 py-3 md:py-4 bg-button rounded-md text-white text-base font-medium duration-300 hover:scale-105"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="w-full bg-footer py-10">
+      <div class="container mx-auto px-4 md:pt-20">
+        <div
+          class="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-16 md:justify-center lg:justify-start pb-12 border-b"
+        >
+          <div
+            class="items-start flex flex-col gap-3 sm:max-w-[210px] w-full md:w-auto"
+          >
+            <span class="text-white text-xl"> Freelancer </span>
+            <div class="text-white flex">
+              <span class="text-base">$</span>
+              <span class="ml-1 text-4xl">19</span>
+              <span class="mt-4">/mo</span>
+            </div>
+            <a href="#" class="text-white opacity-70">5 Psd fles included</a>
+            <a href="#" class="text-white opacity-70">24 hours free support</a>
+            <a href="#" class="text-white opacity-70 w-[210px]"
+              >Multiple features installed</a
+            >
+            <a href="#" class="text-white opacity-70">100 Elements PSD + Al</a>
+            <div class="w-full md:w-auto">
+              <button
+                class="text-white border py-3 md:py-4 px-8 rounded-xl text-base duration-300 hover:scale-105 mt-4 w-full md:w-auto"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="items-start flex flex-col gap-3 sm:max-w-[210px] w-full md:w-auto"
+          >
+            <span class="text-white text-xl"> Freelancer </span>
+            <div class="text-white flex">
+              <span class="text-base">$</span>
+              <span class="ml-1 text-4xl">19</span>
+              <span class="mt-4">/mo</span>
+            </div>
+            <a href="#" class="text-white opacity-70">5 Psd fles included</a>
+            <a href="#" class="text-white opacity-70">24 hours free support</a>
+            <a href="#" class="text-white opacity-70 w-[210px]"
+              >Multiple features installed</a
+            >
+            <a href="#" class="text-white opacity-70">100 Elements PSD + Al</a>
+            <div class="w-full md:w-auto">
+              <button
+                class="text-white border py-3 md:py-4 px-8 rounded-xl text-base duration-300 hover:scale-105 mt-4 w-full md:w-auto"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="items-start flex flex-col gap-3 sm:max-w-[210px] w-full md:w-auto"
+          >
+            <span class="text-white text-xl"> Freelancer </span>
+            <div class="text-white flex">
+              <span class="text-base">$</span>
+              <span class="ml-1 text-4xl">19</span>
+              <span class="mt-4">/mo</span>
+            </div>
+            <a href="#" class="text-white opacity-70">5 Psd fles included</a>
+            <a href="#" class="text-white opacity-70">24 hours free support</a>
+            <a href="#" class="text-white opacity-70 w-[210px]"
+              >Multiple features installed</a
+            >
+            <a href="#" class="text-white opacity-70">100 Elements PSD + Al</a>
+            <div class="w-full md:w-auto">
+              <button
+                class="text-white border py-3 md:py-4 px-8 rounded-xl text-base duration-300 hover:scale-105 mt-4 w-full md:w-auto"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="items-start flex flex-col gap-3 sm:max-w-[210px] w-full md:w-auto"
+          >
+            <span class="text-white text-xl"> Freelancer </span>
+            <div class="text-white flex">
+              <span class="text-base">$</span>
+              <span class="ml-1 text-4xl">19</span>
+              <span class="mt-4">/mo</span>
+            </div>
+            <a href="#" class="text-white opacity-70">5 Psd fles included</a>
+            <a href="#" class="text-white opacity-70">24 hours free support</a>
+            <a href="#" class="text-white opacity-70 w-[210px]"
+              >Multiple features installed</a
+            >
+            <a href="#" class="text-white opacity-70">100 Elements PSD + Al</a>
+            <div class="w-full md:w-auto">
+              <button
+                class="text-white border py-3 md:py-4 px-8 rounded-xl text-base duration-300 hover:scale-105 mt-4 w-full md:w-auto"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-y-6 flex-col lg:flex-row pt-10 justify-between">
+          <div
+            class="flex flex-col sm:flex-row sm:gap-4 sm:flex-wrap md:flex-nowrap md:space-x-10 text-white font-normal text-base"
+          >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 sm:hover:border-b border-cyan-700"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 sm:hover:border-b border-cyan-700"
+              >Privacy</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 sm:hover:border-b border-cyan-700"
+              >Terms & Conditions</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 sm:hover:border-b border-cyan-700"
+              >About us</a
+            >
+            <a
+              href="#"
+              class="hover:text-gray-400 duration-300 pb-2 sm:hover:border-b border-cyan-700"
+              >Contact us</a
+            >
+          </div>
+          <div class="flex gap-5 md:gap-10">
+            <div>
+              <svg
+                class="duration-300 cursor-pointer hover:scale-110"
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.5487 20V10.8777H10.6094L11.0686 7.32156H7.5487V5.05147C7.5487 4.0222 7.83334 3.32076 9.31099 3.32076L11.1925 3.31999V0.13923C10.8671 0.0969453 9.75021 0 8.45021 0C5.73561 0 3.87715 1.65697 3.87715 4.69927V7.32156H0.807129V10.8777H3.87715V20H7.5487Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <svg
+                class="duration-300 cursor-pointer hover:scale-110"
+                width="20"
+                height="18"
+                viewBox="0 0 20 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 2.79875C19.2563 3.125 18.4637 3.34125 17.6375 3.44625C18.4875 2.93875 19.1363 2.14125 19.4412 1.18C18.6488 1.6525 17.7738 1.98625 16.8412 2.1725C16.0887 1.37125 15.0162 0.875 13.8462 0.875C11.5763 0.875 9.74875 2.7175 9.74875 4.97625C9.74875 5.30125 9.77625 5.61375 9.84375 5.91125C6.435 5.745 3.41875 4.11125 1.3925 1.6225C1.03875 2.23625 0.83125 2.93875 0.83125 3.695C0.83125 5.115 1.5625 6.37375 2.6525 7.1025C1.99375 7.09 1.3475 6.89875 0.8 6.5975C0.8 6.61 0.8 6.62625 0.8 6.6425C0.8 8.635 2.22125 10.29 4.085 10.6712C3.75125 10.7625 3.3875 10.8062 3.01 10.8062C2.7475 10.8062 2.4825 10.7913 2.23375 10.7362C2.765 12.36 4.2725 13.5538 6.065 13.5925C4.67 14.6838 2.89875 15.3412 0.98125 15.3412C0.645 15.3412 0.3225 15.3263 0 15.285C1.81625 16.4563 3.96875 17.125 6.29 17.125C13.835 17.125 17.96 10.875 17.96 5.4575C17.96 5.27625 17.9538 5.10125 17.945 4.9275C18.7588 4.35 19.4425 3.62875 20 2.79875Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <svg
+                class="duration-300 cursor-pointer hover:scale-110"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0025 0H9.9975C4.48375 0 0 4.485 0 10C0 12.1875 0.705 14.215 1.90375 15.8612L0.6575 19.5763L4.50125 18.3475C6.0825 19.395 7.96875 20 10.0025 20C15.5162 20 20 15.5138 20 10C20 4.48625 15.5162 0 10.0025 0ZM15.8212 14.1213C15.58 14.8025 14.6225 15.3675 13.8587 15.5325C13.3363 15.6437 12.6537 15.7325 10.3562 14.78C7.4175 13.5625 5.525 10.5763 5.3775 10.3825C5.23625 10.1887 4.19 8.80125 4.19 7.36625C4.19 5.93125 4.91875 5.2325 5.2125 4.9325C5.45375 4.68625 5.8525 4.57375 6.235 4.57375C6.35875 4.57375 6.47 4.58 6.57 4.585C6.86375 4.5975 7.01125 4.615 7.205 5.07875C7.44625 5.66 8.03375 7.095 8.10375 7.2425C8.175 7.39 8.24625 7.59 8.14625 7.78375C8.0525 7.98375 7.97 8.0725 7.8225 8.2425C7.675 8.4125 7.535 8.5425 7.3875 8.725C7.2525 8.88375 7.1 9.05375 7.27 9.3475C7.44 9.635 8.0275 10.5937 8.8925 11.3637C10.0087 12.3575 10.9137 12.675 11.2375 12.81C11.4787 12.91 11.7662 12.8863 11.9425 12.6988C12.1663 12.4575 12.4425 12.0575 12.7238 11.6638C12.9237 11.3813 13.1763 11.3462 13.4412 11.4462C13.7113 11.54 15.14 12.2462 15.4338 12.3925C15.7275 12.54 15.9212 12.61 15.9925 12.7338C16.0625 12.8575 16.0625 13.4388 15.8212 14.1213Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div>
+              <svg
+                class="duration-300 cursor-pointer hover:scale-110"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.5862 0H5.41381C2.42858 0 0 2.42858 0 5.41381V14.5863C0 17.5714 2.42858 20 5.41381 20H14.5863C17.5714 20 20 17.5714 20 14.5863V5.41381C20 2.42858 17.5714 0 14.5862 0V0ZM9.99998 15.4686C6.98454 15.4686 4.53139 13.0154 4.53139 9.99998C4.53139 6.98454 6.98454 4.53139 9.99998 4.53139C13.0154 4.53139 15.4686 6.98454 15.4686 9.99998C15.4686 13.0154 13.0154 15.4686 9.99998 15.4686ZM15.5993 5.82106C14.7082 5.82106 13.9834 5.09627 13.9834 4.20516C13.9834 3.31405 14.7082 2.58911 15.5993 2.58911C16.4904 2.58911 17.2154 3.31405 17.2154 4.20516C17.2154 5.09627 16.4904 5.82106 15.5993 5.82106Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="text-textarey">
+            @ A new era 2016. Awesome wireframe by Andrei Dorin
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
